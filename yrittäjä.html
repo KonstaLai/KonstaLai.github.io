@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yrittäjä</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Koti
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="palvelumme.html" class="cs-li-link">
+                            Palvelumme
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yhteystiedot.html" class="cs-li-link">
+                            Yhteystiedot
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="kodit.html" class="cs-li-link">
+                            Hinnasto kodeille
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yritykset.html" class="cs-li-link">
+                            Yrityksille
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yrittäjä.html" class="cs-li-link">
+                            Yrittäjä
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yritystä Juntunen</title>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #333; /* Default text color */
+        }
+
+        /* Container for the entire content */
+        .cs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Main Header Section */
+        .cs-main-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cs-main-header-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1f2937;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .cs-main-header-subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+
+        .cs-main-header-text {
+            font-size: 1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Section Title (e.g., "KUKA?", "MIKSI?", "MITÄ MINULTA VOI ODOTTAA?") */
+        .cs-section-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #1f2937; /* Dark color for titles */
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Grid Layout */
+        .cs-section-grid {
+            display: flex;
+            flex-direction: column; /* Stack columns on small screens */
+            gap: 30px; /* Gap between columns/rows */
+            margin-bottom: 50px;
+        }
+
+        /* Grid Column */
+        .cs-grid-col {
+            flex: 1; /* Each column takes equal space */
+        }
+
+        /* Content Block Styles */
+        .cs-content-block {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff; /* Default white background for text blocks */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .cs-content-block p {
+            font-size: 1rem;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Image Block Styles */
+        .cs-image-block {
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f3f4f6; /* Light gray background for image blocks */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-image-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specific list for "Mitä minulta voi odottaa?" */
+        .cs-expectation-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cs-expectation-list li {
+            font-size: 1rem;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px; /* Space for custom bullet */
+        }
+
+        .cs-expectation-list li::before {
+            content: '✓'; /* Checkmark icon */
+            color: #10B981; /* Green color for checkmark */
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 768px) { /* Medium screens and up */
+            body {
+                padding: 40px;
+            }
+            .cs-container {
+                padding: 40px;
+            }
+            .cs-main-header-title {
+                font-size: 3.5rem;
+            }
+            .cs-section-grid {
+                flex-direction: row; /* Two columns on desktop */
+                gap: 50px;
+            }
+            .cs-section-title {
+                text-align: left; /* Align titles to left in columns */
+            }
+            /* Specific adjustments for the "MIKSI?" section to align text */
+            .cs-why-section .cs-grid-col:first-child .cs-section-title {
+                margin-top: 0; /* Remove top margin for first title in col */
+            }
+        }
+
+        @media (min-width: 1024px) { /* Large screens and up */
+            body {
+                padding: 60px;
+            }
+            .cs-container {
+                padding: 60px;
+            }
+            .cs-main-header-title {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cs-container-yrittäjä">
+        <main>
+            <!-- Main Title Section -->
+            <section class="cs-main-header">
+                <h1 class="cs-main-header-title">YRITTÄJÄ JUNTUNEN</h1>
+                <p class="cs-main-header-subtitle">Ville-Apeli Juntunen</p>
+            </section>
+
+            <!-- Section 1: Skydiver Image & KUKA? -->
+            <section class="cs-section-grid">
+                <div class="cs-image-block cs-grid-col">
+                    <img
+                        src="skydive.avif"
+                        alt="A person skydiving with a parachute"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/C0C0C0/333333?text=Kuva+ei+saatavilla';"
+                    >
+                </div>
+                <div class="cs-content-block cs-grid-col">
+                    <h2 class="cs-section-title">KUKA?</h2>
+                    <p>
+                        Ville-Aapeli Juntunen 25v Hämeenlinnasta. Entinen prosessiteollisuuden ammattilainen, jolle vuorotyöt riitti. Tykkää urheilla ja matkustella, kokea uusia asioita elämässä. Esim laskuvarjohyppyä ja yrittäjyyttä.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 2: MIKSI? & Two People Image -->
+            <section class="cs-section-grid cs-why-section">
+                <div class="cs-content-block cs-grid-col">
+                    <h2 class="cs-section-title">MIKSI?</h2>
+                    <p>
+                        Irtisanouduttuani ajattelin pitää kunnon breikin ja olla vaan. Mutta eihän siitä mitään tullut – tylsistyminen iski nopeammin kuin arvasinkaan.
+                    </p>
+                    <p>
+                        Yhtenä päivänä kävelin Hämeenlinnan keskustassa ja katse osui näyteikkunoihin. Likaiset kuin mitkä. Rupesin miettimään, miksei kukaan hoida näitä kunnolla. Tiesin yhden tutun, joka pesee ikkunoita Helsingissä, ja hänen puheidensa perusteella työ vaikutti sopivan suoraviivaiselta ja jopa kivaltakin. Siitä ajatus lähti.
+                    </p>
+                    <p>
+                        Päätin kokeilla, jos vaikka voisin olla avuksi ja tehdä samalla jotain omaa. Ja kun kerran lähdetään tekemään, niin tehdään kunnolla. Hommataan ammattivälineet, osallistutaan Business Turnajaisiin. Panostetaan kunnolla.
+                    </p>
+                    <p>
+                        Koska en ole ihan harmaa kaavakeihminen, piti hommaan saada vähän luonnetta. Siitä syntyi Kiiltokoukku – ikkunanpesua, jossa on pieni twisti. Nyrkkeilyn ja ikkunanpesun yhdistelmä, hahmo joka taistelee likaista ikkunaa vastaan.
+                    </p>
+                </div>
+                <div class="cs-image-block cs-grid-col">
+                    <img
+                        src="twopeople.avif"
+                        alt="Two people smiling and posing"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/D3D3D3/333333?text=Kuva+ei+saatavilla';"
+                    >
+                    <p style="font-size: 0.875rem; color: #6b7280; margin-top: 10px; text-align: center;">
+                        KIILTOKOUKKU voitti 2500€ stipendin ja finaalipaikan Hämeenlinna Business Turnajaisten IDEA sarjassa 10.06.2025.<br>
+                        Tuomaristo kuvaili "Hieno asenne, hieno energia. Jämäkästi simppeliä palvelua, mitä on tehty ja jokainen meistä tarvitsee, että kannustetaan miettimään koko Suomen ikkunoita ja pitämään energiaa yllä".
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 3: Person with Cat Image & MITÄ MINULTA VOI ODOTTAA? -->
+            <section class="cs-section-grid">
+                <div class="cs-image-block cs-grid-col">
+                    <img
+                        src="onepeople.avif"
+                        alt="A person holding a cat"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/B0E0E6/333333?text=Kuva+ei+saatavilla';"
+                    >
+                </div>
+                <div class="cs-content-block cs-grid-col">
+                    <h2 class="cs-section-title">MITÄ MINULTA VOI ODOTTAA?</h2>
+                    <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 20px;">
+                        Lupaan hoitaa hommat niin kuin ne kuuluu hoitaa –selkeästi, sovitusti ja siististi.
+                    </p>
+                    <ul class="cs-expectation-list">
+                        <li>Selkeä ja vaivaton palvelu – ei säätöä, ei epämääräisiä aikatauluja.</li>
+                        <li>Puhtaat ikkunat, jotka tekevät vaikutuksen.</li>
+                        <li>Selkeät hinnat, joista tiedät kaiken etukäteen – ei piilokuluja, ei laskutuslisiä.</li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #6b7280; margin-top: 20px;">
+                        Tavoitteeni ei ole vain pestä ikkunoita, vaan tuoda arvoa arkeen.
+                        Haluan laajentaa tätä hommaa niin, että siitä on oikeasti hyötyä ihmisille.
+                        Helpottaa kiireisten päivien keskellä ja tehdä siitä yhdestä näkymättömästä työstä näkyvän kirkas.
+                    </p>
+                    <p style="font-size: 0.9rem; color: #6b7280; margin-top: 20px; font-weight: bold;">
+                        Kiiltokoukku ei lupaa liikoja – se lupaa selkeyttä, laatua ja reilua meininkiä.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+
+<script src="main.js"></script> 
+
+</body>
+</html>

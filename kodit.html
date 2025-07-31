@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Koti
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="palvelumme.html" class="cs-li-link">
+                            Palvelumme
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yhteystiedot.html" class="cs-li-link">
+                            Yhteystiedot
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="kodit.html" class="cs-li-link">
+                            Hinnasto kodeille
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yritykset.html" class="cs-li-link">
+                            Yrityksille
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="yrittäjä.html" class="cs-li-link">
+                            Yrittäjä
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<div class="cs-container-kodit">
+
+        <!-- Main Title -->
+        <header class="cs-header">
+            <h1 class="cs-header-title">IKKUNANPESU KODEILLE</h1>
+            <p class="cs-header-subtitle">Ammattitaitoista ja luotettavaa ikkunanpesua kotitalouksille.</p>
+        </header>
+
+        <main>
+            <!-- Prices and Before Cleaning Section -->
+            <section class="cs-section-grid">
+                <!-- Prices Column -->
+                <div class="cs-content-block cs-prices-block cs-grid-col">
+                    <h2 class="cs-block-title">HINNAT</h2>
+                    <ul class="cs-block-list">
+                        <li><span>YKSIÖ:</span> 50€</li>
+                        <li><span>KAKSIO:</span> 100€</li>
+                        <li><span>KOLMIO:</span> 150€</li>
+                        <li><span>OMAKOTITALOT:</span> 250€</li>
+                    </ul>
+                    <p class="cs-note-text">
+                        Hinnat ovat kiinteät tyypillisillä ikkunanpesukohteilla. Mikäli kohteessa on poikkeuksellisen paljon tai
+                        erikoisikkunoita tai parvekelaseja, sovitaan hinta erikseen. Useimmissa tapauksissa pysytään suoraan hintaluokissa.
+                    </p>
+                </div>
+
+                <!-- Before Cleaning Image Column -->
+                <div class="cs-image-block cs-grid-col">
+                    <h2 class="cs-image-block-title">ENNEN PESUA</h2>
+                    <img
+                        src="https://placehold.co/600x400/E0E0E0/333333?text=Ennen+pesua"
+                        alt="Ikkuna ennen pesua, likainen ja pölyinen"
+                        class="cs-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Kuva+ei+saatavilla';"
+                    >
+                </div>
+            </section>
+
+            <!-- After Cleaning and Service Includes Section -->
+            <section class="cs-section-grid">
+                <!-- After Cleaning Image Column -->
+                <div class="cs-image-block cs-grid-col">
+                    <h2 class="cs-image-block-title">PESUN JÄLKEEN</h2>
+                    <img
+                        src="https://placehold.co/600x400/A0D9B1/333333?text=Pesun+jälkeen"
+                        alt="Puhtaan ikkunan kuva pesun jälkeen, kirkas ja heijastava"
+                        class="cs-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/A0D9B1/333333?text=Kuva+ei+saatavilla';"
+                    >
+                    <div class="cs-note-box">
+                        <h3 class="cs-note-title">HUOM!</h3>
+                        <p>
+                            Ennen pesun pyydän ystävällisesti, että ikkunan edessä
+                            olevat tavarat, kalusteet tai seinustot siirretään pois pesun tieltä.
+                        </p>
+                        <p class="mt-2">
+                            Näin voin työskennellä sujuvasti ja varmistaa parhaan mahdollisen
+                            lopputuloksen – turvallisesti ja ilman vahinkoja.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- What's Included Column -->
+                <div class="cs-content-block cs-includes-block cs-grid-col">
+                    <h2 class="cs-block-title">Mitä palveluun kuuluu?</h2>
+                    <ul class="cs-includes-list">
+                        <li>
+                            <span>Asiakkaan omaisuuden suojaus</span>
+                            <p>Kaikki pesun eteen osuvat pinnat – kuten lattiat, salvas
+                            tai muut huonekalut – suojataan huolellisesti ennen työn
+                            aloittamista.</p>
+                        </li>
+                        <li>
+                            <span>Ikkunanpesu ammattivälineillä (EM KORKEUS UIKOPSU RAJOITUS)</span>
+                            <p>Kaikki lasipinnat pestään sisä- ja ulkopuolelta huolellisesti
+                            – sisältäen molemmat puolet
+                            – ulkoasian molemmat puolet.
+                            Työ tehdään ammattivälineistöllä ja viimeistellään kirkkaaksi.</p>
+                        </li>
+                        <li>
+                            <span>Karmien, ikkunantojen ja pielten puhdistus</span>
+                            <p>Kohteesta ja sen laadusta riippuen joko imuroiden tai pyyhkiä puhtaaksi.</p>
+                        </li>
+                        <li>
+                            <span>Loppukatselmus</span>
+                            <p>Yhteiskatselmus työn jälkeen.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+           
+        </main>
+    </div>
+
+
+</section>
+                                
+
+
+<script src="main.js"></script> 
+    
+</body>
+</html>
