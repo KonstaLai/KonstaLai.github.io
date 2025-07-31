@@ -77,7 +77,6 @@ body {
     box-sizing: border-box;
     padding: 0.75rem 1rem;
     background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 50000;
   }
@@ -315,7 +314,6 @@ body {
     box-sizing: border-box;
     padding: 0 1rem 0rem;
     background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: 10000;
   }
   #cs-navigation .cs-container {
@@ -2356,7 +2354,6 @@ body {
             background-color: #ffffff;
             padding: 24px; /* Default padding */
             border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
 
         /* Header Styles */
@@ -2730,7 +2727,6 @@ body {
             background-color: #ffffff;
             padding: 24px;
             border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             font-family: Poppins;
             padding-top: 8rem;
         }
@@ -2790,7 +2786,6 @@ body {
             padding: 20px;
             border-radius: 8px;
             background-color: #ffffff; /* Default white background for text blocks */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         .cs-content-block p {
@@ -2805,7 +2800,6 @@ body {
             padding: 10px;
             border-radius: 8px;
             background-color: #f3f4f6; /* Light gray background for image blocks */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             display: flex;
             flex-direction: column;
             align-items: center;
